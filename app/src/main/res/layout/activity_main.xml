@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/google"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row1"
+            android:layout_below="@+id/image_google"
+            android:layout_marginTop="100dp">
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:hint="First Name"
+                android:layout_marginStart="20dp"
+                android:id="@+id/edit_text_firstName"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Last Name"
+                android:id="@+id/last_name"
+                android:background="@drawable/button"
+                android:layout_marginStart="30dp"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_text_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Email Address"
+            android:gravity="center"
+            android:layout_below="@+id/row1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button"
+            android:layout_marginEnd="50dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_project"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="Project on GITHUP(link)"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button"
+            android:layout_below="@+id/edit_text_email"
+            android:layout_marginEnd="50dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_project"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:layout_marginStart="150dp"/>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_below="@+id/progress_circle"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#1A237E"
+            android:background="@drawable/button2"/>
+    </RelativeLayout>
+
+
+</ScrollView>
